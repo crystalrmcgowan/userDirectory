@@ -1,0 +1,30 @@
+body {
+  background-color: lightgreen;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.directoryList {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+  border: 0.2px solid gray;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+li p {
+  display: flex;
+  flex-wrap: wrap;
+}
