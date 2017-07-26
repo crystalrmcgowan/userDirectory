@@ -13,8 +13,10 @@ app.get("/", (req, res) => {
   res.render("todo", data)
 })
 
-app.get("/people", (req, res) => {
-  res.render("people", data)
+app.get("/people/:id", (req, res) => {
+  const getId = parseInt(req.params.id)
+  const oneUser = data.users.find(user => user.id === getId)
+  res.render("people", oneUser)
 })
 
 app.listen(3000, () => {
