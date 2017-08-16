@@ -43,6 +43,10 @@ img {
 h2 {
   font-size: 3em;
 }
+.image img {
+  margin-top: 0;
+}
+
 .individualUser {
   display: flex;
   flex-direction: column;
@@ -50,7 +54,7 @@ h2 {
 }
 .image {
   border: 0.5px solid gray;
-  border-radius: 300px;
+  border-radius: 50px;
   margin-right: 1em;
   height: 175px;
 }
